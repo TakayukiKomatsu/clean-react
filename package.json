@@ -1,29 +1,32 @@
 {
-  "name": "clean-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/jest": "^27.0.2",
-    "@types/node": "^13.13.5",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "eslint": "^6.8.0",
-    "eslint-config-standard-with-typescript": "^11.0.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "git-commit-msg-linter": "^3.2.8",
-    "husky": "^4.2.5",
-    "jest": "^27.3.0",
-    "lint-staged": "^10.2.2",
-    "ts-jest": "^27.0.7",
-    "typescript": "^3.8.3"
-  }
+	"name": "clean-react",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --passWithNoTests",
+		"test:watch": "npm test -- --watch",
+		"test:staged": "npm test -- --findRelatedTests",
+		"test:ci": "npm test -- --coverage"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/jest": "^27.0.2",
+		"@types/node": "^13.13.5",
+		"@typescript-eslint/eslint-plugin": "^2.31.0",
+		"eslint": "^6.8.0",
+		"eslint-config-standard-with-typescript": "^11.0.1",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"git-commit-msg-linter": "^3.2.8",
+		"husky": "^4.2.5",
+		"jest": "^27.3.0",
+		"lint-staged": "^10.2.2",
+		"ts-jest": "^27.0.7",
+		"typescript": "^3.8.3"
+	}
 }
