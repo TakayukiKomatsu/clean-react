@@ -35,16 +35,18 @@ module.exports = {
             }
           },
           {
-            loader: 'scss-loader'
+            loader: 'sass-loader'
           }
         ]
       }
     ]
   },
   devServer: {
-    contentBase: './public',
-    writeToDisk: true,
-    historyApiFallback: true
+    static: './public',
+    historyApiFallback: true,
+    devMiddleware: {
+      writeToDisk: true
+    }
   },
   externals: {
     react: 'React',
