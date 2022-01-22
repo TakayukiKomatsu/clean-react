@@ -35,7 +35,7 @@ const Login: React.FC = () => {
               name='password'
             />
           </div>
-          <button type='submit' className={Styles.submit}>Entrar</button>
+          <button type='submit' disabled className={Styles.submit} data-testid="submit">Entrar</button>
           <span className={Styles.link}>Criar conta</span>
           <FormStatus />
         </form>
